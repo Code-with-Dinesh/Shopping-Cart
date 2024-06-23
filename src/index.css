@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.spinner {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  animation: spinner-plncf9 4s infinite;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  border: 9px solid;
+  border-radius: 50%;
+  border-color: #474bff #474bff #0000 #0000;
+  mix-blend-mode: darken;
+  animation: spinner-plncf9 1s infinite linear;
+}
+
+.spinner::after {
+  border-color: #0000 #0000 #dbdcef #dbdcef;
+  animation-direction: reverse;
+}
+
+@keyframes spinner-plncf9 {
+  100% {
+     transform: rotate(1turn);
+  }
+}
+body{
+  overflow-x: hidden;
+}
+.test{
+  color: white;
+  list-style-type: none;
+  font-size: 1.4rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.para{
+  font-family: Oswald;
+}
+.title{
+  
+  font-family: Oswald;
+}
+.price{
+  font-family: Oswald;
+  
+}
+
+.test{
+  font-family: Oswald;
+}
+.check{
+  font-size: 2rem;
+}
