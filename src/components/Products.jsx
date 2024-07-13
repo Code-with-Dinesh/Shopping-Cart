@@ -27,7 +27,7 @@ const Products = ({newstate,removeHandler}) => {
              newstate.length ==0 ?(<div></div>):(
               <div className='absolute right-[20%]'>
            <h1 className='text-4xl text-green-500 font-bold'>Your Summay</h1>
-           <p className='mt-4 text-xl'>Total Price :  ${newstate.reduce((total,item)=>total +item.price,0)}</p>
+           <p className='mt-4 text-xl'>Total Price :  ${newstate.reduce((total,item)=>total +item.price,0).toFixed(2)}</p>
              
            </div>
             )
